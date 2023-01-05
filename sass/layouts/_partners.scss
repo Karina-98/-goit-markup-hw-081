@@ -1,0 +1,46 @@
+.partners {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &-list {
+        display: flex;
+        }
+    &_title {
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+        margin-bottom: 50px;
+    }
+}
+
+
+.partners-list_items:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+
+.partners-list_logo-link {
+    color: #AFB1B8;
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition: color 250ms var(--time-function), background-color 250ms var(--time-function), box-shadow 250ms var(--time-function), border-color 250ms var(--time-function);
+    &:hover,
+    &:focus {
+        color: #2196F3;
+        border-color: #2196F3;
+        }
+}
+
+
+.partners-list_logo-icons {
+    fill: currentColor;
+    transition: color 250ms var(--time-function), background-color 250ms var(--time-function), box-shadow 250ms var(--time-function);
+}

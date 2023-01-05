@@ -1,0 +1,40 @@
+.portfolio-hero{
+    padding-top: 94px;
+    margin-bottom: 94px;
+}
+
+
+.portfolio_list{
+    display: flex;
+    width: 569px;
+    margin: 0px auto 50px;
+    &>li:not(:last-child) {
+        margin-right: 8px;
+        }
+}
+
+.portfolio_btn {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+        background-color: #F5F4FA;
+        padding: 6px 22px;
+        height: 38px;
+        white-space: nowrap;
+        border: none;
+        transition: color 250ms var(--time-function), background-color 250ms var(--time-function), box-shadow 250ms var(--time-function);
+        justify-content: center;
+        align-items: center;
+    &:hover,
+    &:focus {
+            color: #FFFFFF;
+            ;
+            background-color: #2196F3;
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+            border-radius: 4px;
+        }
+}

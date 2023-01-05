@@ -1,0 +1,42 @@
+.about {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &__title {
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        }
+    &__sub-title {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: #757575;
+    
+    }
+    &__items {
+        width: 270px;
+        }
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+        height: 120px;
+        left: 815px;
+        top: 774px;
+        background: #F5F4FA;
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+}
+
+.about__list {
+    display: flex;
+    &>.list:not(:last-child){
+        margin-right: 30px;
+        }
+}
+
+
