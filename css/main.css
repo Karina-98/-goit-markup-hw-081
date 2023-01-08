@@ -1298,6 +1298,11 @@ header .container {
   margin-left: 7px;
   font-size: 12px;
 }
+@media screen and (min-width: 1200px) {
+  .modal_politic-contract {
+    font-size: 14px;
+  }
+}
 
 .modal_icon-close {
   transition: fill 250ms var(--time-function), background-color 250ms var(--time-function), box-shadow 250ms var(--time-function);
@@ -1435,7 +1440,7 @@ label.modal_politic {
 .modal_politic-check:checked + label::before {
   background-color: #2196F3;
   border: none;
-  background-image: url(./images/check.svg);
+  background-image: url(../images/check.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
