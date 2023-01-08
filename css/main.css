@@ -1435,7 +1435,7 @@ label.modal_politic {
 .modal_politic-check:checked + label::before {
   background-color: #2196F3;
   border: none;
-  background-image: url(/images/check.svg);
+  background-image: url(./images/check.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
