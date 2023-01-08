@@ -10,10 +10,10 @@
     padding-top: 118px;
     padding-bottom: 118px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url("/images/header-img-tel.jpg");
+        url("../images/header-img-tel.jpg");
     @include retina{
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url("/images/header-img-tel-2x.jpg");
+    url("../images/header-img-tel.jpg");
     }
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,11 +22,11 @@
 
     @media screen and (min-width:768px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url("/images/header-img-tablet.jpg");
+            url("../images/header-img-tablet.jpg");
         
         @include retina{
         background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url("/images/header-img-tablet2x.jpg ");
+            url("../images/header-img-tablet2x.jpg ");
         }
         
         }
@@ -37,11 +37,11 @@
         padding-top: 200px;
         padding-bottom: 200px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url("/images/background-img-hero.jpg");
+            url("../images/background-img-hero.jpg");
 
         @include retina{
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url("/images/header-img-desktop2x.jpg");
+            url("../images/header-img-desktop2x.jpg");
         }        
     }
 
