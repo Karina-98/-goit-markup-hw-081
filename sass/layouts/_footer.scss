@@ -1,7 +1,7 @@
 .footer {
     font-family: 'Raleway';
     font-weight: 700;
-    font-size: 26px;
+    font-size: 14px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     background-color: #2F303A;
@@ -12,7 +12,20 @@
         }
     &-dop {
         display: flex;
-        align-items: baseline;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        @media screen and (min-width: 768px) {
+            align-items: baseline;
+            flex-direction: row;
+        }
+
+        @media screen and (min-width: 1200px) {
+            justify-content:left;
+        }
+        
     }
     &_title {
         font-family: 'Roboto';
@@ -25,11 +38,24 @@
         color: #FFFFFF;
     }
     &-mail {
-        display: block;
-        margin-left: 93px;
-        width: 570px;
-        height: 86px;
-        position: relative;
+        // display: block;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // margin-left: 93px;
+        // width: 570px;
+        // height: 86px;
+        // position: relative;
+
+        @media screen and (min-width: 1200px) {
+            display: block;
+            margin-left: 93px;
+            width: 570px;
+            height: 86px;
+            position: relative;
+            }
     }
 }
 
@@ -42,7 +68,10 @@
     letter-spacing: 0.03em;
     color: var(--primery-color);
     &-hero:not(:last-child) {
-        margin-bottom: 12px;
+        margin-bottom: 8px;
+        @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+        }
         }
 }
 
@@ -64,15 +93,41 @@
 
 
 .container-footer {
+    // display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    @include desktop{
     display: inline-block;
+    }
+    
 }
 
 .footer-logo {
-    display: inline-block;
-    margin-right: 70px;
+    // display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+            margin-right: 165px;
+        }
+    @media screen and (min-width: 1200px) {
+        align-items: baseline;
+        margin-right: 70px;
+        font-size: 26px;
+        margin-bottom: 0;
+        }
+    
     &_text {
         font-weight: 700;
-        font-size: 26px;
+        font-size: 24px;
         line-height: 1.19;
         letter-spacing: 0.03em;
         color: #2196F3;
@@ -112,8 +167,12 @@
 
 .footer-soc-mail {
     display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 1200px) {
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+        }
+    
     margin-top: 20px;
     & label {
         font-family: 'Roboto';
@@ -126,13 +185,19 @@
         color: #FFFFFF;
         }
     &_button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         bottom: 0;
         right: 0;
-        margin-left: 12px;
+        // margin-left: 12px;
         min-width: 200px;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        @media screen and (min-width: 1200px) {
+            align-items: center;
+            margin-left: 12px;
+            margin-top: 0;
+            }
     }
     &_icons {
         fill: #FFFFFF;
@@ -142,7 +207,7 @@
 
 .footer-soc-mail_input {
     display: flex;
-    width: 358px;
+    min-width: 320px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: transparent;
@@ -159,6 +224,15 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+        min-width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 358px;
+        }
+
     &:focus,
     &:hover {
         outline: transparent;

@@ -1,13 +1,33 @@
 .portfolio-hero{
-    padding-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 60px;
+    margin-bottom: 60px;
+    
+    @include desktop{
+        padding-top: 94px;
+        margin-bottom: 94px;
+    }
 }
 
 
 .portfolio_list{
     display: flex;
+    gap: 8px;
+    row-gap: 15px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+    @include tablet{
+        justify-content: center;
+    }
+
+    @include desktop{
     width: 569px;
+    gap: 0;
     margin: 0px auto 50px;
+    flex-wrap: nowrap;
+    
+    }
     &>li:not(:last-child) {
         margin-right: 8px;
         }
