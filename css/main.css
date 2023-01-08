@@ -1394,6 +1394,7 @@ header .container {
   letter-spacing: 0.03em;
   color: #757575;
   white-space: nowrap;
+  white-space: pre-line;
 }
 @media screen and (min-width: 1200px) {
   .modal_politic {
