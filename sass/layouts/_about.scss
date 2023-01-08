@@ -13,6 +13,13 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         margin-bottom: 10px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        @include tablet{
+            justify-content: flex-start;
+        }
         }
     &__sub-title {
         font-size: 14px;
@@ -24,10 +31,10 @@
     &__items {
         width: 100%;
         margin-bottom: 30px;
-        gap: 30px;
+        
 
         @media screen and (min-width: 768px) {
-                width: calc((100% - 30px) / 2);
+                width: calc((100% - 60px) / 2);
             }
         
             @media screen and (min-width: 1200px) {
@@ -49,11 +56,23 @@
     }
 }
 
+.about__items:nth-last-of-type(2n+1) {
+    @media screen and (min-width: 768px) {
+        margin-left: 30px;
+    }
+}
+
+.about__items:nth-last-of-type(2) {
+    @media screen and (min-width: 1200px) {
+        margin-left: 30px;
+    }
+}
+
 .about__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+
     
     // &>.list:not(:last-child){
     //     @media screen and (min-width: 768px) {

@@ -9,7 +9,7 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-        gap: 30px;
+        
         }
     &__title {
         font-size: 28px;
@@ -58,20 +58,17 @@
     }
 }
 
-// .list>.team__items:nth-last-child(2n) {
-//     @media screen and (min-width: 768px) {
-//       margin-right: 30px;;
-//         }
+.team__items:nth-last-of-type(2n+1){
+    @media screen and (min-width: 768px) {
+        margin-left: 30px;
+        }
+}
 
-      
-// }
-
-// .list>.team__items:not(:last-child) {
-//     @media screen and (min-width: 1200px) {
-//         margin-right: 30px;
-//         }
-
-// }
+.team__items:nth-last-of-type(2) {
+    @media screen and (min-width: 1200px) {
+        margin-left: 30px;
+    }
+}
 
 .soc-list {
     display: flex;
